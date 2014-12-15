@@ -4,9 +4,9 @@ require 'sinatra'
 require 'sinatra/reloader'
 require 'pry'
 
-require_relative '/group.rb' 
-require_relative '/plan.rb'
-require_relative '/user.rb'
+require_relative './models/group' 
+require_relative './models/plan'
+require_relative './model/user'
 
 enable :sessions
 
