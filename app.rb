@@ -1,5 +1,5 @@
 #LDL APP
-
+require 'pg'
 require 'sinatra'
 require 'sinatra/reloader'
 require pry
