@@ -3,9 +3,9 @@ require 'pg'
 require 'sinatra'
 require 'sinatra/activerecord'
 
-require_relative './models/group' 
-require_relative './models/plan'
-require_relative './model/user'
+# require_relative './models/group' 
+# require_relative './models/plan'
+# require_relative './model/user'
 
 enable :sessions
 
