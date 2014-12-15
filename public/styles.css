@@ -41,7 +41,9 @@ h1 {
 	background-color: #FFF;
 }
 
-
+#submitbutton, #loginbutton {
+	padding-top: 10px;
+}
 
 
 
