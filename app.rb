@@ -64,6 +64,18 @@ post '/session/sign_up' do
 	end
 end
 
+# POTENTIAL SOLUTION FOR SIGN UP
+# post "/session/sign_up" do
+# 	@email = params["email"]
+# 	@password = params["password"]
+# 	@password_digest = BCrypt::Password.create(@password)
+	
+# 	user = User.create(email: @email, password_digest: @password_digest)
+	
+# 	session[:user_id] = user.id
+# 	redirect("/users")
+# end
+
 get '/session/logout' do 
 	session.clear
 	redirect('/')
