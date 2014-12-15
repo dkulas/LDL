@@ -1,8 +1,7 @@
 #LDL APP
 require 'pg'
 require 'sinatra'
-require 'sinatra/reloader'
-require 'pry'
+require 'sinatra/activerecord'
 
 require_relative './models/group' 
 require_relative './models/plan'
@@ -71,20 +70,3 @@ get '/session/logout' do
 	session.clear
 	redirect('/')
 end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-binding.pry
