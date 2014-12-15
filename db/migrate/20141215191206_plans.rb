@@ -3,5 +3,6 @@ class Plan < ActiveRecord::Migration
   	create_tables :plans do |t|
   		t.integer :user_id
   		t.string :location
+  	end
   end
 end
