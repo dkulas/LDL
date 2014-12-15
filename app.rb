@@ -2,7 +2,7 @@
 require 'pg'
 require 'sinatra'
 require 'sinatra/reloader'
-require pry
+require 'pry'
 
 require_relative #models path 
 require_relative #models path
