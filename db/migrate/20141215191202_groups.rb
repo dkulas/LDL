@@ -1,6 +1,6 @@
 class Group < ActiveRecord::Migration
   def change
-  	create_tables :groups do |t|
+  	create_table :groups do |t|
   		t.string :group_name
   	end
   end

@@ -1,6 +1,6 @@
 class Plan < ActiveRecord::Migration
   def change
-  	create_tables :plans do |t|
+  	create_table :plans do |t|
   		t.integer :user_id
   		t.string :location
   	end
