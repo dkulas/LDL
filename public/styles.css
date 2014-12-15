@@ -1,0 +1,67 @@
+body {
+	font-family: Andale Mono, sans-serif;
+}
+
+h1 {
+	text-align: center;
+	font-size: 42px;
+}
+
+#menu {
+  width: 100%;
+  height: 35px;
+  font-size: 16px;
+  font-family: Andale Mono, Geneva, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 1px 0.5px 1px #333333;
+  background-color: #889C83;
+  border-radius: 8px;
+}
+
+#menu ul {
+	height: auto;
+	padding: 8px 0px;
+	margin: 0px;
+}
+
+#menu li { 
+	display: inline; 
+	padding: 20px; 
+}
+
+#menu a {
+	text-decoration: none;
+	color: #06365F;
+	padding: 8px 8px 8px 8px;
+}
+
+#menu a:hover {
+	color: #F90;
+	background-color: #FFF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
