@@ -1,0 +1,9 @@
+ActiveRecord Migration Connection Set-Up
+
+1) Create a connection for your Active Record program to your database.  This is generally done through a YAML configuration file (database.yml).
+	
+	EX: development:
+  		adapter: postgresql
+  		host: localhost
+  		database: database_name
+

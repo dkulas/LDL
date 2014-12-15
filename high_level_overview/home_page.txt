@@ -1,0 +1,7 @@
+Home Page
+
+After logging into the app, the user should be redirected to the home page of the app.
+
+From the home page, the user should be able to:
+
+ - Navigate throughout the website

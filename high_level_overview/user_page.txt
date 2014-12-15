@@ -1,0 +1,14 @@
+User Page
+
+A user page should contain the following information:
+
+ - User’s name
+ - Contact info
+ - Desired lunch plans for that day
+
+A user page should contain the following functionality:
+
+ - Ability to create a new lunch-plan (HTML5 Form?)
+ - Ability to view all lunch plans
+ - Ability to navigate throughout the app
+

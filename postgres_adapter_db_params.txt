@@ -1,0 +1,12 @@
+PostgreSQL Parameters
+The minimum PostgreSQL requirements are the adapter and database parameters. Here is the complete list of parameters to consider:
+adapter: Specifies that this is connection information for a PostgreSQL database. The value should be postgresql.
+database: The name of the database that you are attempting to connect to.
+username: Optional parameter containing the username of the user as whom you wish toconnect to the database.
+password: Optional parameter containing the password of the user as whom you wish to connect to the database. This value is provided in plain text.
+port: Optional parameter containing the port that the database is available for connections. host: Optional parameter containing the domain name of the machine that hosts your database.
+min_messages: Optional parameter that allows you to set the min_message value within your database for this connection.
+schema_search_path: Optional parameter containing a comma-separated list of schema names to use in the schema search path for the connection.
+allow_concurrency: Optional parameter that contains either the value true or false. If the value is set to true, the connection uses asynchronous query methods, which will help prevent the Ruby threads from deadlocking. The default value is false, which uses blocking query methods.
+encoding: Optional parameter that allows you to specify the encoding to use.
+The following example shows how to open an Active Record database connection forPostgreSQL:ActiveRecord::Base.establish_connection(:adapter => "postgresql", :database => "test", :username => "kevin", :password => "test")

@@ -1,0 +1,9 @@
+Let’s Do Lunch - App Thoughts
+
+The idea of the app is to allow people to post desired lunch plans and make lunch plans.
+
+Entities Include:
+
+ - User
+ - Plan
+ - Group

@@ -1,0 +1,9 @@
+Sign-up/Login
+
+When a user visits the LDL homepage they should be prompted to either sign-up or login to the app.
+
+If a user chooses to sign-up (and ultimately does) they then will be redirected to their user profile page.
+ - From here the user can navigate to various spots within the app.
+
+If a user logs-in they will be redirected to the app’s homepage, where they will then be able to navigate to various spots within the app.
+
