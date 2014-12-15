@@ -13,6 +13,5 @@ CREATE TABLE users (
 
 CREATE TABLE groups (
 	id SERIAL PRIMARY KEY,
-	group_name TEXT NOT NULL UNIQUE,
-	group_members 
+	group_name TEXT NOT NULL UNIQUE
 )
