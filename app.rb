@@ -57,7 +57,7 @@ post '/session/sign_up' do
   user = User.new(params)
   if user.save
     session[:user_id] = user.id
-    redirect('/users')
+    redirect('/session/users')
   else
     @user = user
     erb :sign_up

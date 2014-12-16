@@ -60,7 +60,8 @@ h3 {
 	right: 0;
 	height: 10px;
 	color: white;
-	text-shadow: 1px 0.5px 1px #333333;
+	text-shadow: 2px 1px 2px #333333;
+	font-size: 16px;
 }
 
 #lunchplans {
