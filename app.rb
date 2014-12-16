@@ -1,4 +1,5 @@
 #LDL APP
+require 'BCrypt'
 require 'sinatra'
 require 'sinatra/activerecord'
 require_relative './models/group' 
@@ -70,7 +71,7 @@ post "/session/sign_up" do
 	@password = params["password"]
 	@password_digest = BCrypt::Password.create(@password)
 	
-	user = User.create(email: @email, password_digest: @password_digest)
+	user = User.encrypt_password(email: @email, password_digest: @password_digest)
 	
 	session[:user_id] = user.id
 	redirect("/users")
