@@ -1,10 +1,18 @@
 body {
 	font-family: Andale Mono, sans-serif;
+	background-image: url(http://upload.wikimedia.org/wikipedia/commons/4/41/Picnic_table.jpg);
 }
 
 h1 {
 	text-align: center;
 	font-size: 42px;
+	color: white;
+	text-shadow: 2px 1px 2px #333333;
+}
+
+h3 {
+	color: white;
+	text-shadow: 1px 0.5px 1px #333333;
 }
 
 #menu {
@@ -31,7 +39,7 @@ h1 {
 
 #menu a {
 	text-decoration: none;
-	color: #06365F;
+	color: white;
 	padding: 8px 8px 8px 8px;
 }
 
@@ -51,19 +59,21 @@ h1 {
 	left: 0;
 	right: 0;
 	height: 10px;
+	color: white;
+	text-shadow: 1px 0.5px 1px #333333;
 }
 
+#lunchplans {
+	text-align: left;
+	color: white;
+	text-shadow: 1px 0.5px 1px #333333;
+}
 
-
-
-
-
-
-
-
-
-
-
+p {
+	color: white;
+	text-shadow: 2px 1px 2px #333333;
+	font-size: 22px;
+}
 
 
 
