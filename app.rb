@@ -45,7 +45,7 @@ post '/session/login' do
 		session[:user_id] = user.id
 		redirect('/users')
 	else
-		"Invalid email or password. Try again."
+		@errors << "Invalid email or password. Try again!"
 		erb :login
 	end
 end
