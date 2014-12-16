@@ -1,6 +1,9 @@
 require "bcrypt"
 
 class User < ActiveRecord::Base
+	has_many :plans
+	has_and_belongs_to_many :groups
+	
   include BCrypt
 
   def password
