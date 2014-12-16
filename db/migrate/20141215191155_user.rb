@@ -6,6 +6,7 @@ class User < ActiveRecord::Migration
   		t.string :password
   		t.integer :phone_number
   		t.integer :group_id
+  		t.timestamps
   	end
   end
 end
