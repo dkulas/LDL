@@ -60,7 +60,8 @@ post "/session/sign_up" do
 	@password = params["password"]
 	@password_digest = BCrypt::Password.create(@password)
 	
-	user = User.create
+	data = params.permit(:email, :password)
+	user = User.create(data)
 	
 	session[:user_id] = user.id
 	redirect("/users")
