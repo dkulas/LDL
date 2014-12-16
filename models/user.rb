@@ -1,5 +1,5 @@
 require 'bcrypt'
-require_relative '/Users/DK/desktop/ldl_app/db/connection'
+require_relative '../db/connection'
 
 class User < ActiveRecord::Base
 	has_many :plans
