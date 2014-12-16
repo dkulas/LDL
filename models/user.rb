@@ -13,7 +13,6 @@ class User < ActiveRecord::Base
   has_many :plans
 
   # validations
-  validates_confirmation_of :password
   validates_presence_of :password, :on => :create
   validates :name,
     :presence => true,
@@ -23,8 +22,6 @@ class User < ActiveRecord::Base
     :uniqueness => { case_sensitive: false },
     :length => { maximum: 255 },
     :format => { with: /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i }
-   validates :phone_number,
-   	:presence => true
 
   # methods
   def authenticate(password)
