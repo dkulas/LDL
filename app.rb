@@ -54,24 +54,13 @@ get '/session/sign_up' do
 	erb :sign_up
 end
 
-# post '/session/sign_up' do 
-# 	user = User.new(params)
-# 	if user.save
-# 		session[:user_id] = user.id
-# 		redirect('/users')
-# 	else
-# 		@user = user_id
-# 		erb :sign_up
-# 	end
-# end
-
 # POTENTIAL SOLUTION FOR SIGN UP
 post "/session/sign_up" do
 	@email = params["email"]
 	@password = params["password"]
 	@password_digest = BCrypt::Password.create(@password)
 	
-	user = User.encrypt_password(email: @email, password_digest: @password_digest)
+	user = User.create
 	
 	session[:user_id] = user.id
 	redirect("/users")
