@@ -27,9 +27,10 @@
 <p>Below is each lunch plan:</p>
 <ul>
   <% @plans.each do |plan| %>
-    <li><%= plan.name %></li>
+    <li><u><%= plan.name %></u></li>
     <li><%= plan.time %></li>
     <li><%= plan.location %></li>
+    <br>
   <% end %>
 </ul>
 

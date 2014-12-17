@@ -54,7 +54,7 @@ h3 {
 
 #footer {
 	position: fixed;
-	text-align: center;
+	text-align: right;
 	bottom: 0;
 	left: 0;
 	right: 0;
@@ -76,7 +76,12 @@ p {
 	font-size: 22px;
 }
 
-
+li {
+	color: white;
+	text-shadow: 2px 1px 2px #333333;
+	font-size: 14px;
+	list-style-type: none;
+}
 
 
 
