@@ -65,7 +65,21 @@ post '/session/sign_up' do
 end
 
 get '/session/plans' do 
+  @plans = Plan.all
   erb :plans
+end
+
+post '/session/plans' do
+  @time = params[:time]
+  @location = params[:location]
+  @name = params[:name]
+  @plan = Plan.new(time: @time, location: @location, name: @name)
+  @plans = Plan.all
+  if @plan.save
+    redirect('/session/plans')
+  else
+    erb :profile
+  end
 end
 
 get '/session/logout' do
