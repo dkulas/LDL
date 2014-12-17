@@ -17,7 +17,6 @@ helpers do
 end
 
 before do
-  #session[:cart] ||= [] NEED TO ASSOCIATE THIS WITH USER PLANS
   @errors ||= []
   @current_user = User.find_by(:id => session[:user_id])
 end
