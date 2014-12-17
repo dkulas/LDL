@@ -4,7 +4,6 @@ class Users < ActiveRecord::Migration
   		t.string :name
   		t.string :email
   		t.string :password_digest
-  		t.integer :phone_number
   		t.timestamps
   	end
   end
