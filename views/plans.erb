@@ -1,6 +1,15 @@
 <h3 id="lunchplans">Create a lunch plan!</h3>
 
 <form action="/session/plans" method="post">
+
+  <% if @user.present? && @user.errors.any? %>
+    <ul>
+    <% @user.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+    <% end %>
+    </ul>
+  <% end %>
+
   <div>
     <input type="text" name="name" placeholder="Name" />
   </div>
