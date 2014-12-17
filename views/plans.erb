@@ -24,8 +24,8 @@
   </div>
 </form>
 
-<p>Below is each lunch plan:</p>
-<ul>
+<p id="lunchplanhead">Below is each lunch plan:</p>
+<ul id="plannedlunch">
   <% @plans.each do |plan| %>
     <li><u><%= plan.name %></u></li>
     <li><%= plan.time %></li>

@@ -83,7 +83,14 @@ li {
 	list-style-type: none;
 }
 
+#plannedlunch {
+text-align: center;
+padding: 0;
+}
 
+#lunchplanhead {
+	text-align: center;
+}
 
 
 
