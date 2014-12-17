@@ -58,7 +58,7 @@ h3 {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	height: 10px;
+	height: 1px;
 	color: white;
 	text-shadow: 2px 1px 2px #333333;
 	font-size: 16px;
@@ -86,10 +86,15 @@ li {
 #plannedlunch {
 text-align: center;
 padding: 0;
+background-color: black;
+width: 130px;
+margin-left: auto;
+margin-right: auto;
 }
 
 #lunchplanhead {
 	text-align: center;
+	font-size: 28px;
 }
 
 
