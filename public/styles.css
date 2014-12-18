@@ -104,6 +104,8 @@ li {
 	margin-right: auto;
 	margin-top: 10%;
 	background-color: black;
+	border: 1px solid black;
+	border-radius: 8px;
 }
 
 #linkedin {
