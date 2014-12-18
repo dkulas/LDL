@@ -3,6 +3,7 @@ require 'sinatra/activerecord'
 require_relative './models/group' 
 require_relative './models/plan'
 require_relative './models/user'
+require_relative './config/environments'
 
 enable :sessions
 
