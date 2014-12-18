@@ -5,3 +5,5 @@ ActiveRecord::Base.establish_connection(
   :host => "localhost",
   :database => "ldl_db"
 )
+
+#comment
